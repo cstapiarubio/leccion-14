@@ -4,29 +4,54 @@
 <head>
     <meta charset= "utf-8">
 	<title>Mi primer formulario</title>
+	<style>
+		body
+		{
+		  font-family: Georgia;
+		}
+		strong
+		{
+          background-color: #2EFEC8;
+		}
+		u
+		{
+		  background-color: #FF00BF;
+		}
+	</style>
 </head>
-<body>
-	<h1><b>Formulario de datos</b></h1><br>
-	<p>Nombre</p>
-	<input type ="text" id="Ejem:Sol"/>
-	<p>Apellido</p>
-	<input type ="text" id="Ejem:Rubio"/>
-	<p>Teléfono</p>
-	<input type ="text" id="Ejem:912345689"/>
-	<p>Escoge tu carro para continuar</p>
-	<input type ="button" value="Escoge tu carro"/>
-	<p>Email</p>
-	<input type ="text" id="Ejem:nombre@gmail.com"/>
-	<p>Crea tu contraseña</p>
-	<input type ="text" id="Ejem:123abcde"/><br>
-	<input type ="button" value="send"/>
-	<form action="">
-	<input type ="text"> 
-	<input type ="text">
-	<input type ="text">
-	<select name ="" id ="">
-	<option value="" ></option>
-	</select>
-	</form>
+<body 
+ background="fondoFlores13.jpg"
+	<h1><strong><u>FORMULARIO DE DATOS</u></strong></h1><br>
+		<form action="">
+		<p><strong>Nombre</strong></p>
+			<input title="Ingrese su nombre" type="text" name="nombre" required/><br>
+		<p><strong>Apellido</strong></p>
+			<input title="Ingrese su apelido" type="text" name="Apellido" required/>
+		<p><strong>Teléfono</strong></p>
+			<input title="Ingrese su teléfono" type="number" name="Teléfono" required/>
+		<p>
+			<label for="color"><strong>Escoge tu color favorito</strong></label><br>
+					<select name="color favorito" id="" type="text" required/> 
+		   				<option value="1">azul</option> 
+			  		    <option value="2">rojo</option> 
+			  	 		<option value="3">violeta</option>
+			   			<option value="4">amarillo</option> 
+			   			<option value="5">verde</option> 
+			   			<option value="6">negro</option> 
+			   			<option value="7">blanco</option> 
+			   			<option value="8">rosado</option> 
+					</select>	
+		</p>	
+		<p><strong>Email</strong></p>
+			<input title="Ingrese su email" type="email" name="email" required/>
+		<p>
+			<label for="pw"><strong>Crea tu contraseña</strong></label><br>
+				<input type ="password" name="pw" pattern=".{6,}" title ="6 o más caracteres" required/><br>
+			</p>
+				<p>
+					<input type ="submit" name="" value="send"/>
+				</p>			
+				<option value=""></option>
+		</form>
 </body>
 </html>
